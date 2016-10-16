@@ -10,3 +10,11 @@ Choose elements for their meaning before adding classes.
   </article>
 </main>
 ```
+
+## Caveats
+
+Use a button for an action and an anchor for navigation. Keep one main landmark per page.
+
+## Check
+
+Navigate the page with a keyboard and inspect the heading order.
