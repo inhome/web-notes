@@ -12,3 +12,11 @@ http.createServer(function (req, res) {
   res.end("ok\n");
 }).listen(3000, "127.0.0.1");
 ```
+
+## Caveats
+
+Bind to loopback for a local experiment. Add explicit timeouts and deployment controls before exposing a real service.
+
+## Check
+
+Request /health and an unknown route and compare the status codes.
