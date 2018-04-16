@@ -9,3 +9,11 @@ document.querySelector("#items").addEventListener("click", function (event) {
   console.log(button.dataset.itemId);
 });
 ```
+
+## Caveats
+
+The event target can be an icon inside the button. Use closest and keep matching inside the intended container.
+
+## Check
+
+Click the button text, an inner icon, and the container background.
