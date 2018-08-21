@@ -10,3 +10,11 @@ function readTitle(responsePromise) {
   }).then(function (body) { return body.title; });
 }
 ```
+
+## Caveats
+
+Catching and doing nothing converts a failure into an apparently successful undefined result.
+
+## Check
+
+Use a rejected promise and confirm that the caller receives the rejection.
