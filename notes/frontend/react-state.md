@@ -9,3 +9,11 @@ class Counter extends React.Component {
   render() { return <button onClick={this.increment}>{this.state.count}</button>; }
 }
 ```
+
+## Caveats
+
+Reading this.state twice while queuing updates can reuse a stale value. The example assumes a JSX and class-fields build step.
+
+## Check
+
+Queue two increments in one event and expect the count to increase by two.
