@@ -10,3 +10,11 @@ maximum - 1
 maximum
 maximum + 1
 ```
+
+## Caveats
+
+Include invalid types and empty input when the public contract permits receiving them.
+
+## Check
+
+Change an inclusive comparison to exclusive and verify that a test fails.
